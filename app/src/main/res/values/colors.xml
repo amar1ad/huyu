@@ -1,23 +1,7 @@
 <resources>
-    <color name="colorAccent">#007FAC</color>
-    <color name="colorPrimary">#007FAC</color>
-    <color name="colorPrimaryDark">#007FAC</color>
-    <color name="colorControlHighlight">#C1E8FF</color>
-    <color name="colorControlNormal">#007FAC</color>
-    <color name="bg_primary">#0F1F1F</color>
-    <color name="bg_secondary">#152A2A</color>
-    <color name="bg_card">#1A3535</color>
-    <color name="bg_card_hover">#1F3F3F</color>
-    <color name="accent">#4ECDC4</color>
-    <color name="accent_dim">#3BA89F</color>
-    <color name="accent_glow">#264ECDC4</color>
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#A0B8B8</color>
-    <color name="text_muted">#6B8A8A</color>
-    <color name="gold">#D4A849</color>
-    <color name="gold_dim">#B8932E</color>
-    <color name="border">#1A4ECDC4</color>
-    <color name="card_dark">#1A4A4A</color>
-    <color name="progress_bg">#1AFFFFFF</color>
-    <color name="transparent">#00000000</color>
+	<color name="colorPrimary">#283593</color>
+	<color name="colorPrimaryDark">#880E4F</color>
+	<color name="colorAccent">#D49218</color>
+	<color name="colorControlHighlight">#008DCD</color>
+	<color name="colorControlNormal">#D49218</color>
 </resources>
