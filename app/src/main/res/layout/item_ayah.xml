@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="#1A4A4A">
+
+    <TextView
+        android:id="@+id/tvAyahText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:lineSpacingExtra="12dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvAyahNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_juz_circle"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="1"
+        android:textColor="#0F1F1F"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>
