@@ -51,7 +51,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: com.example.service.GitHubService$$ExternalSyntheticLambda0@16ad30a{{ steps.java_detect.outputs.java_version }}
+          java-version: com.example.service.GitHubService$$ExternalSyntheticLambda0@6477aa4{{ steps.java_detect.outputs.java_version }}
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
