@@ -8,10 +8,10 @@ android {
 	useLibrary 'org.apache.http.legacy'
 	
 	defaultConfig {
-		applicationId "com.my.newproject4"
-		namespace "com.my.newproject4"
+		applicationId "com.masirah.tv"
+		namespace "com.masirah.tv"
 		minSdkVersion 21
-		targetSdkVersion 34
+		targetSdkVersion 28
 		versionCode 1
 		versionName "1.0"
 	}
@@ -21,9 +21,6 @@ android {
 			minifyEnabled false
 			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 		}
-	}
-	buildFeatures {
-		viewBinding true
 	}
 }
 
