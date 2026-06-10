@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_quran"
+        android:icon="@drawable/ic_quran"
+        android:title="القرآن" />
+
+    <item
+        android:id="@+id/nav_athkar"
+        android:icon="@drawable/ic_athkar"
+        android:title="أذكار" />
+
+    <item
+        android:id="@+id/nav_prayer"
+        android:icon="@drawable/ic_mosque"
+        android:title="الصلاة" />
+
+    <item
+        android:id="@+id/nav_tasbih"
+        android:icon="@drawable/ic_tasbih"
+        android:title="تسبيح" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/ic_more"
+        android:title="المزيد" />
+
+</menu>
