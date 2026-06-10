@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_topic.xml — RecyclerView item for Topic Index -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp">
+
+    <!-- ===== Topic Icon ===== -->
+    <FrameLayout
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/bg_topic_icon">
+
+        <TextView
+            android:id="@+id/tvTopicIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            tools:text="☪" />
+
+    </FrameLayout>
+
+    <!-- ===== Topic Info ===== -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTopicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="العقيدة والتوحيد" />
+
+        <TextView
+            android:id="@+id/tvTopicCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6B8A8A"
+            android:textSize="12sp"
+            tools:text="42 موضوع" />
+
+    </LinearLayout>
+
+    <!-- ===== Arrow Icon ===== -->
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:contentDescription="فتح"
+        android:rotation="180"
+        android:src="@drawable/ic_chevron_right"
+        android:tint="#6B8A8A" />
+
+</LinearLayout>
