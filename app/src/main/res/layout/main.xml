@@ -1,156 +1,53 @@
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="#0F1F1F"
-	android:layoutDirection="rtl">
-	<androidx.core.widget.NestedScrollView
-		android:id="@+id/vscroll2"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="550dp"
+		android:padding="8dp"
+		android:background="#161F30"
+		android:gravity="center_vertical"
+		android:orientation="vertical">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:src="@drawable/logo"
+			android:scaleType="fitEnd"
+			android:layout_gravity="center_horizontal|center_vertical" />
+		<TextView
+			android:id="@+id/textview1"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="AlMasirahTV\nالمسيرة"
+			android:textSize="18sp"
+			android:textColor="#FFFFFF"
+			android:layout_gravity="center_horizontal|center_vertical" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear3"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_marginBottom="70dp"
-		android:fillViewport="true">
-		<LinearLayout
-			android:id="@+id/linear4"
+		android:padding="8dp"
+		android:background="#161F30"
+		android:gravity="bottom"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom"
+		android:layout_weight="1">
+		<ProgressBar
+			android:id="@+id/progressbar1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:orientation="vertical">
-			<RelativeLayout
-				android:id="@+id/header"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="20dp">
-				<LinearLayout
-					android:id="@+id/linear2"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:orientation="vertical"
-					android:layout_centerVertical="true"
-					android:layout_alignParentStart="true">
-					<TextView
-						android:id="@+id/textview4"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:layout_marginTop="5dp"
-						android:text="القرآن الكريم"
-						android:textSize="24sp"
-						android:textStyle="bold"
-						android:textColor="#FFFFFF" />
-				</LinearLayout>
-				<ImageView
-					android:id="@+id/btnSettings"
-					android:layout_width="35dp"
-					android:layout_height="35dp"
-					android:padding="5dp"
-					android:background="?android:attr/selectableItemBackgroundBorderless"
-					android:src="@drawable/ic_settings"
-					android:scaleType="center"
-					android:layout_alignParentEnd="true"
-					android:layout_centerVertical="true" />
-			</RelativeLayout>
-			<LinearLayout
-				android:id="@+id/linear5"
-				android:layout_width="match_parent"
-				android:layout_height="50dp"
-				android:layout_margin="20dp"
-				android:background="@drawable/bg_search_bar"
-				android:gravity="center_vertical"
-				android:paddingStart="15dp">
-				<ImageView
-					android:id="@+id/imageview3"
-					android:layout_width="20dp"
-					android:layout_height="20dp"
-					android:src="@drawable/ic_search"
-					android:scaleType="center"
-					android:tint="#6B8A8A" />
-				<EditText
-					android:id="@+id/etSearch"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:background="@android:color/transparent"
-					android:textSize="14sp"
-					android:textColor="#FFFFFF"
-					android:hint="ابحث عن سورة أو آية..."
-					android:textColorHint="#6B8A8A"
-					android:paddingStart="10dp" />
-			</LinearLayout>
-			<androidx.cardview.widget.CardView
-				android:id="@+id/lastReadCard"
-				android:layout_width="match_parent"
-				android:layout_height="150dp"
-				android:layout_marginBottom="20dp"
-				app:cardBackgroundColor="#1A4A4A"
-				android:layout_marginStart="20dp"
-				android:layout_marginEnd="20dp"
-				app:cardCornerRadius="20dp"
-				app:cardElevation="0dp">
-				<RelativeLayout
-					android:id="@+id/relativelayout2"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="20dp">
-					<ImageView
-						android:id="@+id/imageview4"
-						android:layout_width="120dp"
-						android:layout_height="match_parent"
-						android:src="@drawable/initial_page_header_footer_dark_5"
-						android:scaleType="fitCenter"
-						android:alpha="0.2"
-						android:layout_alignParentEnd="true" />
-					<LinearLayout
-						android:id="@+id/linear6"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:orientation="vertical">
-						<TextView
-							android:id="@+id/textview6"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:text="آخر قراءة"
-							android:textSize="14sp"
-							android:textColor="#FFFFFF" />
-						<TextView
-							android:id="@+id/tvLastReadSurahName"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:layout_marginTop="10dp"
-							android:text="الفاتحة"
-							android:textSize="20sp"
-							android:textStyle="bold"
-							android:textColor="#FFFFFF" />
-						<TextView
-							android:id="@+id/tvLastReadVerse"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:layout_marginTop="4dp"
-							android:text="سورة رقم 1"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
-					</LinearLayout>
-				</RelativeLayout>
-			</androidx.cardview.widget.CardView>
-			<com.google.android.material.tabs.TabLayout
-				android:id="@+id/subTabs"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:background="@android:color/transparent"
-				app:tabIndicatorColor="#4ECDC4"
-				app:tabSelectedTextColor="#4ECDC4"
-				app:tabTextColor="#6B8A8A" />
-			<androidx.viewpager2.widget.ViewPager2
-				android:id="@+id/viewPager"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:minHeight="500dp" />
-		</LinearLayout>
-	</androidx.core.widget.NestedScrollView>
-	<com.google.android.material.bottomnavigation.BottomNavigationView
-		android:id="@+id/bottomNav"
-		android:layout_width="match_parent"
-		android:layout_height="70dp"
-		android:background="#152A2A"
-		android:layout_gravity="bottom"
-		app:menu="@menu/bottom_nav_menu" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+			android:padding="8dp"
+			android:indeterminate="true"
+			style="?android:progressBarStyle"
+			android:layout_gravity="bottom" />
+	</LinearLayout>
+</LinearLayout>
