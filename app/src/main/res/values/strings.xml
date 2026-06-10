@@ -1,29 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">القرآن الكريم </string>
-    <string name="salam">السلام عليكم</string>
-    <string name="last_read">آخر قراءة</string>
-    <string name="search_hint">ابحث عن سورة…</string>
-    <string name="tab_index">الفهرس</string>
-    <string name="tab_topics">الفهرس الموضوعي</string>
-    <string name="sub_surah">سورة</string>
-    <string name="sub_juz">جزء</string>
-    <string name="sub_favorites">مفضلة</string>
-    <string name="nav_quran">القرآن</string>
-    <string name="nav_athkar">أذكار</string>
-    <string name="nav_prayer">الصلاة</string>
-    <string name="nav_tasbih">تسبيح</string>
-    <string name="nav_more">المزيد</string>
-    <string name="verse_unit">آية</string>
-    <string name="starts_from">يبدأ من:</string>
-    <string name="no_results">لا توجد نتائج</string>
-    <string name="empty_favorites">لم تقم بإضافة أي سورة للمفضلة بعد</string>
-    <string name="topic_unit">موضوع</string>
-    <string name="add_to_favorites">إضافة للمفضلة</string>
-    <string name="menu">القائمة</string>
-    <string name="settings">الإعدادات</string>
-
-    <!-- ===== Meccan / Medinan ===== -->
-    <string name="meccan">مكية</string>
-    <string name="medinan">مدنية</string>
+	<string name="app_name" translatable="false">AlMasirahTV</string>
 </resources>
