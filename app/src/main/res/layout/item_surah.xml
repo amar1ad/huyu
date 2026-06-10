@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_surah.xml — RecyclerView item for each Surah -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp">
+
+    <!-- ===== Surah Number in Octagon ===== -->
+    <FrameLayout
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="14dp">
+
+        <!-- Octagon Background -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="رقم السورة"
+            android:src="@drawable/ic_octagon" />
+
+        <!-- Number Text -->
+        <TextView
+            android:id="@+id/tvSurahNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#4ECDC4"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="1" />
+
+    </FrameLayout>
+
+    <!-- ===== Surah Info ===== -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Arabic Name -->
+        <TextView
+            android:id="@+id/tvSurahName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="الفاتحة" />
+
+        <!-- Details (Type + Verse Count) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSurahType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6B8A8A"
+                android:textSize="12sp"
+                tools:text="مكية" />
+
+            <!-- Dot Separator -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_dot" />
+
+            <TextView
+                android:id="@+id/tvVerseCountSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6B8A8A"
+                android:textSize="12sp"
+                tools:text="7 آية" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ===== Verse Count (Right Side) ===== -->
+    <TextView
+        android:id="@+id/tvVerseCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="#A0B8B8"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="7 آية" />
+
+    <!-- ===== Favorite Star ===== -->
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="إضافة للمفضلة"
+        android:focusable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_star_outline"
+        app:tint="#6B8A8A" />
+
+</LinearLayout>
